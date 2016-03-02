@@ -1,9 +1,9 @@
 {
   "name": "mocha-env-reporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ci/dev environment aware mocha reporter",
   "author": "Vilius Lukosius <vilius@wix.com>",
-  "license" : "SEE LICENSE IN LICENSE.md",
+  "license": "SEE LICENSE IN LICENSE.md",
   "homepage": "https://github.com/wix/mocha-env-reporter",
   "main": "index.js",
   "scripts": {

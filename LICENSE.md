@@ -11,7 +11,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 # PATENT LICENSE
 ## Wix.com Ltd. - Grant of Patent License
-"Software" means the tspoon software distributed by Wix.com Ltd. (“Wix”).
+"Software" means the mocha-env-reporter software distributed by Wix.com Ltd. (“Wix”).
 A "Necessary Claim" is a claim of a patent licensable by Wix that is necessarily infringed by the Software standing alone.
 A "Patent Assertion" is any lawsuit or other action alleging direct, indirect, or contributory infringement  or inducement to infringe any patent, including across-claim or counterclaim.
 Subject to the terms and conditions of this License and the BSD-style license that can be found in the LICENSE file in the root of the source tree, Wix hereby grants to you a perpetual, worldwide, non- exclusive, no-charge, royalty-free, irrevocable (except as stated below) license under any Necessary Claims, to make, have made, use, offer to sell, sell, import, and otherwise transfer the Software. If you (or any of your subsidiaries, corporate affiliates or agents) institute (either directly or indirectly), or gain a direct financial interest in, a Patent Assertion against

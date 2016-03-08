@@ -1,4 +1,4 @@
 'use strict';
-describe('embedded', () => {
-  it('should run', () => {});
+describe('embedded', function() {
+  it('should run', function() {});
 });

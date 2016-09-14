@@ -24,12 +24,12 @@
     "url": "https://github.com/wix/mocha-env-reporter/issues"
   },
   "dependencies": {
-    "mocha": "2.4.5",
-    "mocha-teamcity-reporter": "1.0.0"
+    "mocha": "3.0.2",
+    "mocha-teamcity-reporter": "1.1.1"
   },
   "devDependencies": {
     "chai": "3.5.0",
-    "jshint": "2.9.1",
-    "shelljs": "0.6.0"
+    "jshint": "2.9.3",
+    "shelljs": "0.7.4"
   }
 }

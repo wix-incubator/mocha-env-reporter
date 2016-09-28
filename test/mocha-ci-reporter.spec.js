@@ -3,9 +3,9 @@ var expect = require('chai').expect,
   shelljs = require('shelljs');
 
 function run() {
-  var out = shelljs.exec('./node_modules/mocha/bin/mocha ./test/embedded/test.js --reporter index');
+  var out = shelljs.exec('./node_modules/mocha/bin/mocha test/embedded/test.js --reporter index');
   expect(out.code).to.equal(0);
-  return out.output;
+  return out.stdout;
 }
 
 describe('mocha ci reporter', function() {

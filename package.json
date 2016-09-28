@@ -1,6 +1,6 @@
 {
   "name": "mocha-env-reporter",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "ci/dev environment aware mocha reporter",
   "author": "Vilius Lukosius <vilius@wix.com>",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -24,10 +24,13 @@
     "url": "https://github.com/wix/mocha-env-reporter/issues"
   },
   "dependencies": {
-    "mocha": "3.0.2",
     "mocha-teamcity-reporter": "1.1.1"
   },
+  "peerDependencies": {
+    "mocha": ">=2"
+  },
   "devDependencies": {
+    "mocha": "3.0.2",
     "chai": "3.5.0",
     "jshint": "2.9.3",
     "shelljs": "0.7.4"

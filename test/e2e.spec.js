@@ -44,7 +44,7 @@ delete baseEnv.BITBUCKET_COMMIT;
 
 // re-install test project, run test and return stdout report
 function run(env) {
-  var options = {cwd: testProjPath, env:Object.assign({}, env, baseEnv)};
+  var options = {cwd: testProjPath, env:Object.assign({}, env, baseEnv), silent: true};
   var out = shelljs.exec('rm -rf node_modules', options);
   expect(out.code, 'exit code for rm -rf node_modules').to.equal(0);
   out = shelljs.exec('npm install', options);
@@ -82,5 +82,11 @@ describe('mocha env reporter', function() {
   it('should use "spec" reporter when not running on ci', function() {
     var log = run({});
     expect(log).to.contain('✓ should run');
+  });
+
+  it('should use whatever reporter is defined in mocha_reporter environment variable even when running on ci', function() {
+    var log = run({TEAMCITY_VERSION : '123', mocha_reporter : 'JSON'});
+    expect(log).to.not.contain('##teamcity');
+    expect(JSON.parse(log).tests[0].title).to.eql('should run');
   });
 });

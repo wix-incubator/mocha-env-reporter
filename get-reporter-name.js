@@ -21,4 +21,4 @@ var environmentName =
 	isDefinedEnv('BITBUCKET_COMMIT') ? 'bitbucket pipelines' :
 	'default';
 
-module.exports = config['mocha-env-reporters'][environmentName];
+module.exports = process.env.mocha_reporter || config['mocha-env-reporters'][environmentName];

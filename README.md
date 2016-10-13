@@ -3,6 +3,9 @@
 
 A [mocha](https://mochajs.org/) reporter that switches output format between built-in 'spec' and [mocha-teamcity-reporter](https://www.npmjs.com/package/mocha-teamcity-reporter) base on where tests are being executed - locally or ci. Actual switch is environment variable `BUILD_NUMBER` || `TEAMCITY_VERSION`. Given environment variable `BUILD_NUMBER` or `TEAMCITY_VERSION` is set, [mocha-teamcity-reporter](https://www.npmjs.com/package/mocha-teamcity-reporter) is used, otherwise - 'spec' builtin mocha reporter.
 
+The reporter also supports an environment variable `mocha_reporter` in which you can set an arbitrary environment
+reporter. This is useful if you use another continous integration service like jenkins or bamboo.
+
 # install
 
 ```

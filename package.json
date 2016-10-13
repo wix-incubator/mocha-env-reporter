@@ -1,6 +1,6 @@
 {
   "name": "mocha-env-reporter",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "ci/dev environment aware mocha reporter",
   "author": "Vilius Lukosius <vilius@wix.com>",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -26,9 +26,6 @@
   },
   "_dependencies": {
     "mocha-teamcity-reporter": "1.1.1"
-  },
-  "peerDependencies": {
-    "mocha": ">=2.4.5"
   },
   "devDependencies": {
     "mocha": "3.0.2",

@@ -1,3 +1,4 @@
 'use strict';
+var reporterName = require('./get-reporter-name');
 
-module.exports = (process.env.BUILD_NUMBER || process.env.TEAMCITY_VERSION) ? require('mocha-teamcity-reporter') : require('mocha').reporters.spec;
+module.exports = require('mocha').reporters[reporterName] || require(reporterName);

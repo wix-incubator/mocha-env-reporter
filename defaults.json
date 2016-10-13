@@ -1,0 +1,9 @@
+{
+  "mocha-env-reporters" : {
+    "default": "spec",
+    "teamcity": "mocha-teamcity-reporter"
+  },
+  "dependenciesVersions" : {
+      "mocha-teamcity-reporter": "1.1.1"
+  }
+}

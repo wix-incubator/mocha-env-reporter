@@ -1,9 +1,13 @@
 {
   "mocha-env-reporters" : {
     "default": "spec",
-    "teamcity": "mocha-teamcity-reporter"
+    "teamcity": "mocha-teamcity-reporter",
+    "jenkins": "mocha-jenkins-reporter",
+    "bamboo" : "mocha-bamboo-reporter"
   },
   "dependenciesVersions" : {
-      "mocha-teamcity-reporter": "1.1.1"
+    "mocha-teamcity-reporter": "1.1.1",
+    "mocha-jenkins-reporter": "0.2.6",
+    "mocha-bamboo-reporter": "1.1.1"
   }
 }

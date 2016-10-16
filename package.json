@@ -27,7 +27,7 @@
     "mocha-teamcity-reporter": "1.1.1"
   },
   "devDependencies": {
-    "mocha": "3.0.2",
+    "mocha": "3.1.2",
     "chai": "3.5.0",
     "jshint": "2.9.3",
     "shelljs": "0.7.4"

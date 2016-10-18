@@ -42,15 +42,21 @@ delete baseEnv.HUDSON_URL;
 delete baseEnv.GO_PIPELINE_LABEL;
 delete baseEnv.BITBUCKET_COMMIT;
 
+function expectOk(out, name){
+  if (out.code !== 0){
+    throw new Error(name + ' FAILED!\n'+out.stdout);
+  }
+}
+
 // re-install test project, run test and return stdout report
 function run(env) {
   var options = {cwd: testProjPath, env:Object.assign({}, env, baseEnv), silent: true};
   var out = shelljs.exec('rm -rf node_modules', options);
-  expect(out.code, 'exit code for rm -rf node_modules').to.equal(0);
+  expectOk(out, 'rm -rf node_modules');
   out = shelljs.exec('npm install', options);
-  expect(out.code, 'exit code for npm install').to.equal(0);
+  expectOk(out, 'npm install');
   out = shelljs.exec('./node_modules/.bin/mocha test.js --reporter mocha-env-reporter', options);
-  expect(out.code, 'exit code for mocha').to.equal(0);
+  expectOk(out, 'mocha');
   return out.stdout;
 }
 

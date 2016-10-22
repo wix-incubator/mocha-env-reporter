@@ -1,4 +1,11 @@
 language: node_js
 node_js:
-  - "4"
-  - "6"
+- '4'
+- '6'
+deploy:
+  provider: npm
+  email: viliusl@wix.com
+  api_key:
+    secure: AVyzIwBzXaOgkB7XQw84zUfOiD6Ll7sKDFKy7SZ/3nv9LLp/bn2rbEBHx9DA8j03MmdGXqCiC0xMdIa6pdPjj5sLkYqmBEXdnK4iu0IvptjgIlpd9LrWlpxjekm9XNvqQdQJ+vm1f4DujrPvZIoB3yijv1PjB3k3zy9mjYFDM5E/n2j/DkyFvTaPdj/naDAWHSZnXDCbKKVELs98ThsTw23O7yWmFzavysKkuCfOIuWd7OJM2uV1cUCVJUIlimGy8pB4oa4WUFjr+Tc4Jh+n9SddmpyWFqW/3Sk5fx67bBJHjTSxPLUmzkmK1VDZCrZ6G0HCufQsZctLZdfNhOsaS6g90PZb6ryI1Bs+wP/9hY/wG/EZRjx9deiMcA4cAuXDY99UeAJBKQWJTY01UhE5TI8aWUE8NZ6D6NlWwIAtiRVWLo/CxbsSBA4GQT+mVBsY/pK+olNcWGrMpiD3FMvYH04RnzxPshdRyi5emwmJCnNC3tzVVVj2L2/0aEqnWQhXT6bds15TGh01cGNwtoLZBRaO6FWMmsYykFX44KHH5cy1dBKxt1eMO9CtPXQD6BC60ag+8XS8ZcdiTt1nhYyYZmV8lE6sHCIAN3BZWyABP6C0NOmBjoTr7fnF9laff0b6c+8gZtGRV5KdPmXGDvlw8qeF73dcelqGAgkhP6QUu3Y=
+  on:
+    repo: wix/mocha-env-reporter

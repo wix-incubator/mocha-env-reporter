@@ -1,5 +1,5 @@
 # mocha-env-reporter
-[![npm version](https://badge.fury.io/js/mocha-env-reporter.svg)](https://badge.fury.io/js/mocha-env-reporter)
+[![Build Status](https://img.shields.io/travis/wix/mocha-env-reporter/master.svg?label=build%20status)](https://travis-ci.org/wix/mocha-env-reporter) [![npm version](https://badge.fury.io/js/mocha-env-reporter.svg)](https://badge.fury.io/js/mocha-env-reporter)
 
 A [mocha](https://mochajs.org/) reporter that switches output format between built-in 'spec' and [mocha-teamcity-reporter](https://www.npmjs.com/package/mocha-teamcity-reporter) base on where tests are being executed - locally or ci. Actual switch is environment variable `BUILD_NUMBER` || `TEAMCITY_VERSION`. Given environment variable `BUILD_NUMBER` or `TEAMCITY_VERSION` is set, [mocha-teamcity-reporter](https://www.npmjs.com/package/mocha-teamcity-reporter) is used, otherwise - 'spec' builtin mocha reporter.
 

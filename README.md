@@ -27,4 +27,4 @@ In you package.json append `--reporter mocha-env-reporter` to your mocha test co
 
 # License
 
-We use a custom license, see ```LICENSE.md```
+Licensed under MIT License.

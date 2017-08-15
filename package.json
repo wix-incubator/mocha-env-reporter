@@ -3,10 +3,14 @@
   "version": "2.0.4",
   "description": "ci/dev environment aware mocha reporter",
   "author": "Vilius Lukosius <vilius@wix.com>",
+  "contributors": [
+    "Amir Arad <amira@wix.com> (http://github.com/amir-arad)"
+  ],
   "license": "MIT",
   "homepage": "https://github.com/wix/mocha-env-reporter",
   "main": "index.js",
   "scripts": {
+    "install": "node ./install.js",
     "lint": "jshint test/ index.js",
     "pretest": "npm run lint -s",
     "test": "mocha"
@@ -22,9 +26,6 @@
   ],
   "bugs": {
     "url": "https://github.com/wix/mocha-env-reporter/issues"
-  },
-  "dependencies": {
-    "mocha-teamcity-reporter": "1.1.1"
   },
   "devDependencies": {
     "mocha": "3.1.2",

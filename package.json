@@ -1,6 +1,6 @@
 {
   "name": "mocha-env-reporter",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "ci/dev environment aware mocha reporter",
   "author": "Vilius Lukosius <vilius@wix.com>",
   "contributors": [

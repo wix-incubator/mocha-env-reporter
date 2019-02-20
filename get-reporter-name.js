@@ -11,7 +11,7 @@ function isDefinedEnv(){
 }
 
 var environmentName =
-	isDefinedEnv('TEAMCITY_VERSION', 'TEAMCITY_PROJECT_NAME') ? 'teamcity' :
+	isDefinedEnv('TEAMCITY_VERSION', 'TEAMCITY_PROJECT_NAME') ? 'default' /*'teamcity'*/ :
 	isDefinedEnv('JENKINS_URL') ? 'jenkins' :
 	isDefinedEnv('bamboo_planKey') ? 'bamboo' :
 	isDefinedEnv('TF_BUILD') ? 'team foundation' :

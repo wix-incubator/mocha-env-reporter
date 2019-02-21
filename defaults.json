@@ -6,7 +6,7 @@
     "bamboo" : "mocha-bamboo-reporter"
   },
   "dependenciesVersions" : {
-    "mocha-teamcity-reporter": "1.1.1",
+    "mocha-teamcity-reporter": "2.5.2",
     "mocha-jenkins-reporter": "0.2.6",
     "mocha-bamboo-reporter": "1.1.1"
   }

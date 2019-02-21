@@ -12,7 +12,7 @@ if (config.dependenciesVersions.hasOwnProperty(reporterName) && fs.existsSync(pa
 	} catch(e) {
 		var toInstall = reporterName + '@' + config.dependenciesVersions[reporterName];
 		console.log('did not find reporter '+reporterName +'. Installing '+toInstall);
-		childProcess.exec('npm install -D ' + toInstall, {cwd: path.resolve(__dirname, '../..')});
+		childProcess.exec('npm install ' + toInstall, {cwd: path.resolve(__dirname, '../..')});
 	}
 } else {
 	console.info('reporter ' + reporterName + ' is not recognized by mocha-env-reporter, not installing it automatically.');

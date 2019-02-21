@@ -64,7 +64,7 @@ describe('mocha env reporter', function() {
   // generous timeout for slow testing environments as there's some disk I/O involved
   this.timeout(30*1000);
 
-  it.skip('should use teamcity reporter when running in teamcity', function() {
+  it('should use teamcity reporter when running in teamcity', function() {
     var log = run({TEAMCITY_VERSION : '123'});
     expect(log).to.contain('##teamcity');
   });

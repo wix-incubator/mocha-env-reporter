@@ -27,7 +27,11 @@ In you package.json append `--reporter mocha-env-reporter` to your mocha test co
   },
 ...
 ```
+## configuration
 
+In order to override the choice of reporter simply set environment variable `mocha_reporter` to the reporter name (example  `specs`).
+
+The default reporters per environments are defined at (defaults.json)[https://github.com/wix/mocha-env-reporter/blob/master/defaults.json]
 
 # License
 

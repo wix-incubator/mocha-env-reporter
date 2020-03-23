@@ -27,7 +27,7 @@
     "url": "https://github.com/wix/mocha-env-reporter/issues"
   },
   "dependencies": {
-    "mocha-teamcity-reporter": "*",
+    "mocha-teamcity-reporter": "3.0.0",
     "mocha-jenkins-reporter": "*",
     "mocha-bamboo-reporter": "*"
   },

@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "mocha-teamcity-reporter": "*",
-    "mocha-jenkins-reporter": "*",
+    "mocha-jenkins-reporter": "0.4.3",
     "mocha-bamboo-reporter": "*"
   },
   "devDependencies": {
